@@ -112,12 +112,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Contracts\IRockPaperScissorsGame.cs" />
     <Compile Include="Controllers\MessagesController.cs" />
     <Compile Include="Dialogs\GamerBotDialogLuis.cs" />
     <Compile Include="Dialogs\RootDialog.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Logics\ClassicRockPaperScissorsGame.cs" />
+    <Compile Include="Logics\ExtendedGame.cs" />
+    <Compile Include="Model\ExtendedHandType.cs" />
+    <Compile Include="Model\HandType.cs" />
+    <Compile Include="Model\RandomExtendedHand.cs" />
+    <Compile Include="Model\RandomHand.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
