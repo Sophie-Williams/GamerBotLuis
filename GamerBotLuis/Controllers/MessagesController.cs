@@ -5,7 +5,7 @@ using System.Web.Http;
 using Microsoft.Bot.Builder.Dialogs;
 using Microsoft.Bot.Connector;
 
-namespace GamerBotLuis
+namespace GamerBotLuis.Controllers
 {
     [BotAuthentication]
     public class MessagesController : ApiController
@@ -18,7 +18,7 @@ namespace GamerBotLuis
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.GamerBotDialogLuis());
+                await Conversation.SendAsync(activity, () => new Dialogs.GamerDialog().DefaultIfException());
             }
             else
             {
