@@ -12,7 +12,7 @@ using Microsoft.Bot.Connector;
 
 namespace GamerBotLuis.Dialogs
 {
-    [LuisModel(modelID: "de5a093d-b90d-46e1-817e-63d9244745d8 ", subscriptionKey: "931486fbce2e45ddb5a32c33c8db8341")]
+    [LuisModel("de5a093d-b90d-46e1-817e-63d9244745d8", "931486fbce2e45ddb5a32c33c8db8341")]
     [Serializable]
     public class GamerBotDialogLuis : LuisDialog<string>
     {
