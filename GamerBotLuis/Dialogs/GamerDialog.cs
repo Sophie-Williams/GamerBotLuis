@@ -46,7 +46,7 @@ namespace GamerBotLuis.Dialogs
                 randomHand = RandomExtendedHand.GetRandomHand();
                 winnerHand = game.Play(hand, randomHand);
             }
-            await context.PostAsync($"Esta es tu mano: {hand.Name.ToString()} y esta la mía: {randomHand.ToString()} ");
+            await context.PostAsync($"Esta es tu mano: {hand.Name.ToString()} y esta la mía: {randomHand.Name.ToString()} ");
             await context.PostAsync($"La mano ganadora es: {winnerHand.Name.ToString()} ");
         }
 
