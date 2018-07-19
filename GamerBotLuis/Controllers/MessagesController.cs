@@ -18,7 +18,7 @@ namespace GamerBotLuis.Controllers
         {
             if (activity.Type == ActivityTypes.Message)
             {
-                await Conversation.SendAsync(activity, () => new Dialogs.GamerDialog().DefaultIfException());
+                await Conversation.SendAsync(activity, () => new Dialogs.GamerDialog());
             }
             else
             {
